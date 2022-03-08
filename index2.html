@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<title> Program 2</title>
+
+</head>
+<body>
+<p> Program for sum of 2 numbers </p>
+<hr>
+<button id="clicker" onclick="myFunction()">Enter Numbers</button><button id="ClerField" onclick="ClearFunction()">Clear Results</button>
+<hr><h3> Result :</h3>
+<b><text id="resulttext"> Start Program to see results!!</text></b>
+<hr>
+</body>
+<p><a href="index.html"> < Previous Program </a>Program 2 of 6 by Hari Acharya <a href="index3.html"> Next Program > </a></p>
+<body>
+</html>
+<script>
+function myFunction(){
+	let num = prompt("First Number:");
+	let numone = prompt("Second Number:");
+	let sum = Number(num) + Number(numone);
+	console.log(sum);
+	document.getElementById("resulttext").innerHTML=(sum);}
+	
+	function ClearFunction(){
+	document.getElementById("resulttext").innerHTML=("0");}
+</script>

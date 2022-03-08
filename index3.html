@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+<title> Program 3</title>
+</head>
+<body>
+<p> Program to check if the number is positive, negative or zero </p>
+<hr>
+<button id="clicker" onclick="myFunction()">Enter Numbers</button><button id="ClerField" onclick="ClearFunction()">Clear Results</button>
+<hr><h3> Result :</h3>
+<b><text id="resulttext"> Start Program to see results!!</text></b>
+<hr>
+</body>
+<p><a href="index2.html"> < Previous Program </a>Program 3 of 6 by Hari Acharya (others programs comming soon.) </a></p>
+<body>
+</html>
+<script>
+function myFunction(){
+	let num = prompt("First Number:");
+	if (Number(num) > 0){
+	document.getElementById("resulttext").innerHTML=(num + " is positive");}
+	else if (Number(num)< 0){
+	document.getElementById("resulttext").innerHTML=(num + " is negative");}
+	else{
+	document.getElementById("resulttext").innerHTML=("Number is zero.");}
+	}
+	// Clears
+	function ClearFunction(){
+	document.getElementById("resulttext").innerHTML=("Cleared!");
+	}
+</script>

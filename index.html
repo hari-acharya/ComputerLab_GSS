@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Program 1</title>
+
+</head>
+<body>
+<p> Program to display name, address and contact number. </p>
+<hr>
+<button id="clicker" onclick="myFunction()">Update it!</button>
+<button id="ClerField" onclick="ClearFunction()">Clear Fields</button>
+<hr>
+<p> Name : <b><text id="nametext">Null</text></b></p>
+<p> Address : <b><text id="addresstext">Null</b></text></p>
+<p> Contact Number : <b><text id="contacttext">Null</b></text></p>
+<hr>
+</body>
+<p> Program 1 of 6 by Hari Acharya <a href="index2.html"> Next Program > </a></p>
+<html>
+<script>
+//JavaScript File
+console.log("File Has been accessed");
+function myFunction(){
+	console.log("Working");
+	let name = prompt("Enter you name :");
+	document.getElementById("nametext").innerHTML=(name);
+	let address =prompt("Enter you Address :");
+	document.getElementById("addresstext").innerHTML=(address);
+	let contactno =prompt("Enter you Phone Number :");
+	document.getElementById("contacttext").innerHTML=(contactno);
+}
+
+function ClearFunction(){
+	document.getElementById("nametext").innerHTML=("Null")
+	document.getElementById("addresstext").innerHTML=("Null")
+	document.getElementById("contacttext").innerHTML=("Null")
+
+
+}
+
+</script>
